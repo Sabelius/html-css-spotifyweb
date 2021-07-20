@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    height: calc(100%-10vh);
+    height: calc(100% - 15vh);
     width: 100%;
 }
 .clearfix{
@@ -165,7 +165,7 @@ hr{
 }
 .footer-nav{
     background-color: bisque;
-    height: 10vh;
+    height: 15vh;
     background-color: rgb(65, 62, 62);
     width: 100%;
     display: flex;
@@ -189,11 +189,22 @@ hr{
     color:grey;
     padding: 5px 0 0 10px;
 }
-.play-song-buttons{
-    font-size: 20px;
-    color: white;
-    padding-left: 33%;
+.audio-player-container{
+    padding-left: 200px;
 }
-.play-song-buttons .fas{
+.audio-player-buttons{
+    font-size:20px;
+    color: white;
+    background-color: rgb(65, 62, 62);
+    padding-left: 300px;
+    border: none;
+}
+.audio-player-buttons .fas{
     padding-left: 30px;
+}
+.seek-slider{
+    width: 300px;
+    height: 1px;
+    vertical-align: middle;
+    appearance: none;
 }
