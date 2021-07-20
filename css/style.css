@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    height: 85vh;
+    height: calc(100vh - 80px);
     width: 100%;
 }
 .clearfix{
@@ -35,7 +35,7 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 15vw;
+    width: 15%;
     height: 100%;
     padding-left: 10px;
     float: left;
@@ -99,8 +99,8 @@ hr{
 }
 .main-container{
     background-color: rgb(35, 35, 90);
-    width: calc(100% - 15vw);
-    float:right;
+    width: 85%;
+    float: right;
 }
 .main-nav{
     text-align: center;
@@ -165,8 +165,7 @@ hr{
     border-radius: 50%;
 }
 .footer-nav{
-    background-color: bisque;
-    height: 15vh;
+    height: 80px;
     background-color: rgb(65, 62, 62);
     width: 100%;
     display: flex;
@@ -185,26 +184,54 @@ hr{
 .footer-title{
     color: white;
 }
+.footer-subtitle:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
 .footer-icons{
     vertical-align: bottom;
     color:grey;
     padding: 5px 0 0 10px;
 }
-.audio-player-container{
-    padding-left: 200px;
+.footer-icons:hover{
+    color: white;
+    cursor: pointer;
 }
-.audio-player-buttons{
+.audio-bar{
+    padding: 10px 0 0 350px;
+}
+.audio-player-container{
     font-size:20px;
     color: white;
     background-color: rgb(65, 62, 62);
-    padding-left: 300px;
+    padding-left: 390px;
     border: none;
 }
-.audio-player-buttons .fas{
+.audio-player-container .fas{
     padding-left: 30px;
+}
+.audio-player-container .fas:hover{
+    font-size: 25px;
+    cursor: pointer;
 }
 .seek-slider{
     width: 300px;
+    height: 1px;
+    vertical-align: middle;
+    appearance: none;
+}
+.footer-second-icons{
+    padding-left: 230px;
+    color: white;
+    font-size: 15px;
+}
+.fa-list,
+.fa-tv,
+.fa-volume-up{
+    padding-left: 10px;
+}
+.volume{
     height: 1px;
     vertical-align: middle;
     appearance: none;
