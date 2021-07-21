@@ -40,9 +40,10 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 15%;
+    width: 200px;
     padding-left: 10px;
     float: left;
+    overflow: hidden;
 }
 .logo{
     width: 50%;
@@ -53,6 +54,9 @@
 }
 .second-icon{
     padding-top: 10px;
+}
+.list{
+    flex-grow: 4;
 }
 .search-icon{
     width: 12%;
@@ -81,9 +85,6 @@ ul li{
     font-size: 50px;
     vertical-align: middle;
 }
-.install{
-    padding-top: 75px;
-}
 .download-logo{
     width: 10%;
     vertical-align: middle;
@@ -103,7 +104,7 @@ hr{
 }
 .main-container{
     background-color: rgb(35, 35, 90);
-    width: 85%;
+    width: calc(100% - 200px);
     height: 100%;
     float: right;
     overflow: auto;
@@ -120,16 +121,16 @@ hr{
 .main-title{
     color: white;
     font-size: 20px;
-    padding: 30px 0 15px 15px;
+    padding: 30px 0 15px 30px;
 }
 .subtitle{
     color: gray;
-    padding-left: 15px;
+    padding-left: 30px;
 }
 .songflex{
     display: flex;
     padding: 15px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .song-container{
     width: 160px;
@@ -253,6 +254,12 @@ hr{
     }
 }
 @media  screen and (max-width:480px) {
+    .main-container{
+        width: calc(100% - 50px);
+    }
+    .nav-flex{
+        width: 50px;
+    }
     .nav-flex span,
     .nav-flex .fa-plus-square,
     .nav-flex hr,
@@ -260,14 +267,14 @@ hr{
         display: none;
     }
     .nav-flex .logo{
-        width: 100%;
+        width: 80%;
     }
     .search-icon{
         width: 50%;
     }
     .install .download-logo,
     .install .profile{
-        width: 20%;
+        width: 40%;
     }
     .songflex{
         flex-wrap: wrap;
