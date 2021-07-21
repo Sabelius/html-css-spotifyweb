@@ -8,7 +8,7 @@
     height: 100vh;
 }
 .total-container{
-    height: calc(100vh - 80px); 
+    height: calc(100% - 80px); 
 }
 .clearfix::after{
     content: "";
@@ -103,6 +103,7 @@ hr{
     width: 85%;
     height: 100%;
     float: right;
+    overflow: auto;
 }
 .main-nav{
     text-align: center;
@@ -160,16 +161,17 @@ hr{
     color: gray;
     padding-top: 5px;
 }
+.circle-image{
+    border-radius: 50%;
+}
 .footer-nav{
     height: 80px;
     background-color: rgb(65, 62, 62);
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
-    justify-content: space-evenly;
-    position: fixed;
-    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
 }
 .small-sinister{
     width: 30px;
@@ -190,19 +192,21 @@ hr{
 .footer-icons{
     vertical-align: middle;
     color:grey;
+    display: inline-block;
+    padding-left: 10px;
 }
 .footer-icons:hover{
     color: white;
     cursor: pointer;
 }
 .audio-bar{
-    padding: 10px 0 0 350px;
+    padding-left: 45px;
 }
 .audio-player-container{
     font-size:20px;
     color: white;
     background-color: rgb(65, 62, 62);
-    padding-left: 390px;
+    text-align: center;
     border: none;
 }
 .audio-player-container .fas{
@@ -219,7 +223,6 @@ hr{
     appearance: none;
 }
 .footer-second-icons{
-    padding-left: 230px;
     color: white;
     font-size: 15px;
 }
