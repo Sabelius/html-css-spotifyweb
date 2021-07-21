@@ -81,6 +81,9 @@ ul li{
     font-size: 50px;
     vertical-align: middle;
 }
+.install{
+    padding-top: 75px;
+}
 .download-logo{
     width: 10%;
     vertical-align: middle;
@@ -126,11 +129,17 @@ hr{
 .songflex{
     display: flex;
     padding: 15px;
+    justify-content: space-evenly;
+}
+.song-container{
+    width: 160px;
+    position: relative;
 }
 .song-image{
     width: 160px;
     opacity: 1;
     transition: 0.5s;
+    display: block;
 }
 .hover{
     transition: 0.5s;
@@ -138,7 +147,9 @@ hr{
     text-align: center;
     position: absolute;
     color: white;
-    transform: translate(110%, -210%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 .song-container:hover .hover{
@@ -235,4 +246,30 @@ hr{
     height: 1px;
     vertical-align: middle;
     appearance: none;
+}
+@media screen and (min-width:480px) and (max-width:1280px){
+    .songflex{
+        flex-wrap: wrap;
+    }
+}
+@media  screen and (max-width:480px) {
+    .nav-flex span,
+    .nav-flex .fa-plus-square,
+    .nav-flex hr,
+    .playlist{
+        display: none;
+    }
+    .nav-flex .logo{
+        width: 100%;
+    }
+    .search-icon{
+        width: 50%;
+    }
+    .install .download-logo,
+    .install .profile{
+        width: 20%;
+    }
+    .songflex{
+        flex-wrap: wrap;
+    }
 }
