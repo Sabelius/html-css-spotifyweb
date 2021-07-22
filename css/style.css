@@ -76,7 +76,7 @@ span:hover,
 }
 .playlist{
     color: white;
-    padding-top: 20px;
+    padding: 20px 0 5px 0;
     font-size: 20px;
 }
 ul li{
@@ -220,11 +220,14 @@ hr{
     color: white;
     cursor: pointer;
 }
+.audio-central{
+    width: 33%;
+}
 .audio-bar{
     padding-left: 45px;
 }
 .audio-player-container{
-    font-size:20px;
+    font-size: 20px;
     color: white;
     background-color: rgb(65, 62, 62);
     text-align: center;
@@ -253,6 +256,7 @@ hr{
     padding-left: 10px;
 }
 .volume{
+    width: 100px;
     height: 1px;
     vertical-align: middle;
     appearance: none;
@@ -261,11 +265,9 @@ hr{
     .songflex{
         flex-wrap: wrap;
     }
-    .footer-nav .audio-central {
-        flex-shrink: 3;
-    }
 }
-@media  screen and (max-width:480px) {
+
+@media screen and (max-width:480px){ 
     .main-container{
         width: calc(100% - 50px);
     }
@@ -300,4 +302,4 @@ hr{
     .songflex{
         flex-wrap: wrap;
     }
-}
+} 
