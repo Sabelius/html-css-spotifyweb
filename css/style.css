@@ -49,6 +49,9 @@
     width: 50%;
     padding-top: 5px;
 }
+.logo2{
+    display: none;
+}
 .first-icons{
     padding-top: 30px;
 }
@@ -112,6 +115,11 @@ hr{
 }
 .main-nav{
     text-align: center;
+}
+.line hr{
+    color: green;
+    width: 50px;
+    margin-left: 20px;
 }
 .main-nav li{
     display: inline-block;
@@ -253,6 +261,9 @@ hr{
     .songflex{
         flex-wrap: wrap;
     }
+    .footer-nav .audio-central {
+        flex-shrink: 3;
+    }
 }
 @media  screen and (max-width:480px) {
     .main-container{
@@ -260,6 +271,7 @@ hr{
     }
     .nav-flex{
         width: 50px;
+        vertical-align: middle;
     }
     .nav-flex span,
     .nav-flex .fa-plus-square,
@@ -268,14 +280,22 @@ hr{
         display: none;
     }
     .nav-flex .logo{
-        width: 80%;
+        display: none;
+    }
+    .nav-flex .logo2{
+        display: block;
+        margin-top: 5px;
+        filter: invert(1);
     }
     .search-icon{
-        width: 50%;
+        width: 60%;
     }
-    .install .download-logo,
-    .install .profile{
-        width: 40%;
+    .download-logo{
+        padding-bottom: 5px;
+    }
+    .download-logo,
+    .profile{
+        width: 60%;
     }
     .songflex{
         flex-wrap: wrap;
