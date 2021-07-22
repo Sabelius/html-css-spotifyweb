@@ -195,8 +195,8 @@ hr{
     align-items: center;
 }
 .small-sinister{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 .footer-titles{ 
     display: inline-block;
@@ -220,40 +220,26 @@ hr{
     color: white;
     cursor: pointer;
 }
-.audio-central{
-    width: 33%;
-}
-.audio-bar{
-    padding-left: 45px;
-}
-.audio-player-container{
-    font-size: 20px;
+.audio-central i{
+    font-size: 15px;
     color: white;
     background-color: rgb(65, 62, 62);
     text-align: center;
     border: none;
+    padding-left: 25px;
 }
-.audio-player-container .fas{
-    padding-left: 30px;
-}
-.audio-player-container .fas:hover{
+.audio-central i:hover{
     font-size: 25px;
     cursor: pointer;
 }
 .seek-slider{
-    width: 300px;
     height: 1px;
     vertical-align: middle;
     appearance: none;
 }
-.footer-second-icons{
+.footer-second-icons i{
     color: white;
-    font-size: 15px;
-}
-.fa-list,
-.fa-tv,
-.fa-volume-up{
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .volume{
     width: 100px;
