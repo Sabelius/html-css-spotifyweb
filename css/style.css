@@ -82,6 +82,7 @@ ul li{
     list-style-type: none;
 }
 .fa-plus-square{
+    color: grey;
     font-size: 50px;
     vertical-align: middle;
 }
