@@ -142,11 +142,12 @@ hr{
     justify-content: space-around;
 }
 .song-container{
-    width: 160px;
+    width: calc((100% - 60px) / 6);
     position: relative;
+    margin-right: 10px;
 }
 .song-image{
-    width: 160px;
+    width: 100%; 
     opacity: 1;
     transition: 0.5s;
     display: block;
@@ -176,7 +177,6 @@ hr{
 }
 .song-title{
     color:white;
-    width: 160px;
 }
 .song-subtitle{
     color: gray;
@@ -214,7 +214,7 @@ hr{
     vertical-align: middle;
     color:grey;
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .footer-icons:hover{
     color: white;
@@ -229,7 +229,10 @@ hr{
     background-color: rgb(65, 62, 62);
     text-align: center;
     border: none;
-    padding-left: 25px;
+    padding-left: 5px;
+}
+.audio-central .fa-random{
+    padding-left: 60px;
 }
 .audio-central i:hover{
     font-size: 25px;
@@ -246,25 +249,36 @@ hr{
 }
 .footer-second-icons i{
     color: white;
-    padding-left: 2px;
+    padding-left: 5px;
 }
 .volume{
-    width: 50px;
+    width: 70px;
     height: 1px;
-    vertical-align: middle;
     appearance: none;
+    vertical-align: middle;
 }
 .first-footer-part,
 .footer-second-icons{
     min-width: 50px;
 }
-@media screen and (min-width:480px) and (max-width:1280px){
+@media screen and (min-width: 678px) and (max-width:1280px){
     .songflex{
         flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .song-container{
+        width: calc((100% - 40px) / 4);
     }
 }
 
-@media screen and (max-width:480px){ 
+@media screen and (max-width: 678px){ 
+    .songflex{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .song-container{
+        width: calc((100% - 20px) / 2);
+    }
     .main-container{
         width: calc(100% - 50px);
     }
